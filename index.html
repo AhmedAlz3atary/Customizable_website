@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="permissions-policy" content="notifications">
+    <title>AI Customizable Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <h1 class="customizable">Welcome to My AI Customizable Website</h1>
+        <p class="customizable">Try asking the chatbot to change the website's appearance!</p>
+        
+        <div class="content-section">
+            <h2 class="customizable">Sample Content</h2>
+            <div class="card customizable">
+                <h3>Feature 1</h3>
+                <p>This is a sample card that you can customize.</p>
+            </div>
+            <button class="customizable-button">Click Me</button>
+        </div>
+    </main>
+
+    <div id="chatbot-container" class="draggable">
+        <button id="toggle-chat">💬</button>
+        <div id="chatbot-header">
+            <span>AI Assistant</span>
+            <div class="header-buttons">
+                <button id="refresh-chat">🔄</button>
+                
+            </div>
+        </div>
+        <div id="chat-interface" class="hidden">
+            <div id="chat-messages"></div>
+            <div id="chat-input-area">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button id="send-message">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
